@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portofolio Digital – Mohammad Akmal Hafiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f8f8; --surface:#ffffff; --ink:#14262c; --muted:#4d6269; --line:#cfdadd;
+  --teal:#2b6b7e; --teal-ink:#ffffff; --accent:#c98a00;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f1b1f; --surface:#162529; --ink:#e8f0f1; --muted:#9db3b9; --line:#2b4046; --teal:#6fb7cb; --teal-ink:#0f1b1f; --accent:#e5b73b;}
+}
+:root[data-theme="dark"]{--bg:#0f1b1f; --surface:#162529; --ink:#e8f0f1; --muted:#9db3b9; --line:#2b4046; --teal:#6fb7cb; --teal-ink:#0f1b1f; --accent:#e5b73b;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.hero p.kecil{margin:0 0 18px;color:var(--muted)}
+.hero h1{font:800 clamp(2.6rem,9vw,5.4rem)/0.98 "Bricolage Grotesque",sans-serif;letter-spacing:-0.025em;margin:0 0 22px;color:var(--teal)}
+.hero p.lead{max-width:58ch;font-size:1.12rem;margin:0 0 26px}
+.nav{display:flex;flex-wrap:wrap;gap:10px}
+.nav a{padding:9px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--surface);font-weight:500;font-size:.95rem}
+.nav a:hover{border-color:var(--teal)}
+
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font:800 1.9rem/1.15 "Bricolage Grotesque",sans-serif;margin:0 0 8px;letter-spacing:-0.01em}
+h3{font:500 1.25rem/1.3 "Bricolage Grotesque",sans-serif;margin:0 0 4px}
+.intro{color:var(--muted);margin:0 0 30px;max-width:62ch}
+
+.matkul{margin:0 0 34px}
+.matkul>h3{color:var(--teal);padding-bottom:8px;border-bottom:2px solid var(--teal);margin-bottom:0}
+.tugas{display:grid;grid-template-columns:1fr auto;gap:10px 24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.tugas h4{margin:0 0 4px;font-weight:500;font-size:1.05rem}
+.tugas p{margin:0;color:var(--muted);font-size:.96rem}
+.meta{list-style:none;margin:8px 0 0;padding:0;font-size:.9rem;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+.folder{margin:12px 0 0;color:var(--muted);font-size:.96rem}
+.folder a{color:var(--teal);font-weight:500}
+.tautan{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.tautan a{padding:6px 13px;border-radius:6px;background:var(--teal);color:var(--teal-ink);text-decoration:none;font-size:.88rem;font-weight:500;white-space:nowrap}
+.tautan a:hover{filter:brightness(1.12)}
+@media (max-width:600px){.tugas{grid-template-columns:1fr}.tautan{justify-content:flex-start}}
+
+.dua{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:34px}
+ul.polos{list-style:none;margin:0;padding:0}
+ul.polos li{padding:7px 0;border-bottom:1px solid var(--line)}
+ul.polos li:last-child{border-bottom:0}
+dl.kontak{display:grid;grid-template-columns:auto 1fr;gap:8px 22px;margin:0}
+dl.kontak dt{color:var(--muted)}
+dl.kontak dd{margin:0}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="kecil">Portofolio digital · Ketrampilan Komputer · Teknik Komputer, kelas TK3C</p>
+  <h1>Mohammad Akmal Hafiz</h1>
+  <p class="lead">Mahasiswa Teknik Komputer Politeknik Negeri Samarinda dengan minat pada elektronika dan pemrograman. Halaman ini mengumpulkan tugas mata kuliah Ketrampilan Komputer saya, lengkap dengan tautan ke berkasnya di Google Drive.</p>
+  <nav class="nav" aria-label="Navigasi halaman">
+    <a href="#tugas">Tugas kuliah</a>
+    <a href="#keterampilan">Keterampilan</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<section id="tugas">
+  <h2>Tugas kuliah</h2>
+  <p class="intro">Semua tugas mata kuliah Ketrampilan Komputer ini saya kerjakan sendiri (individu). Tombol Drive membuka folder berisi berkas tugasnya.</p>
+
+  <div class="matkul">
+    <h3>Ketrampilan Komputer</h3>
+    <p class="folder">Semua tugas mata kuliah ini ada dalam satu folder. <a href="https://drive.google.com/drive/folders/1bxIOo-PM_nWN2ZTG-IGeFo7YNIFqVCZH?usp=drive_link" target="_blank" rel="noopener">Buka folder Drive</a></p>
+    <div class="tugas">
+      <div><h4>Tugas 1: Surat Undangan Otomatis dengan Mail Merge</h4><p>Surat undangan seminar yang dibuat dengan Mail Merge, terdiri dari template surat, data penerima di Excel, dan hasil gabungan untuk 8 penerima.</p><ul class="meta"><li><b>Teknologi:</b> Microsoft Word (Mail Merge), Microsoft Excel</li><li><b>Hasil:</b> Tiga berkas: template, data penerima, dan 8 surat hasil gabungan.</li></ul></div>
+      <div class="tautan"><a href="https://drive.google.com/drive/folders/1bxIOo-PM_nWN2ZTG-IGeFo7YNIFqVCZH?usp=drive_link" target="_blank" rel="noopener" aria-label="Buka folder tugas di Drive">Drive</a></div>
+    </div>
+    <div class="tugas">
+      <div><h4>Tugas 2: Rekap Penjualan Tiket Pesawat 25 Bandara (1990–2000)</h4><p>Tabel penjualan tiket 25 bandara selama sebelas tahun, dilengkapi rata-rata per bandara dan rata-rata per tahun.</p><ul class="meta"><li><b>Teknologi:</b> Pengolahan tabel data dan perhitungan rata-rata</li><li><b>Hasil:</b> Tabel lengkap dua halaman dengan seluruh nilai rata-rata terhitung.</li></ul></div>
+      <div class="tautan"><a href="https://drive.google.com/drive/folders/1bxIOo-PM_nWN2ZTG-IGeFo7YNIFqVCZH?usp=drive_link" target="_blank" rel="noopener" aria-label="Buka folder tugas di Drive">Drive</a></div>
+    </div>
+    <div class="tugas">
+      <div><h4>Tugas 3: Panduan Bergambar Mail Merge di Microsoft Word</h4><p>Panduan bergambar yang menjelaskan cara menghubungkan Word dengan daftar penerima dari Excel, mulai dari menyiapkan data sampai menyisipkan field.</p><ul class="meta"><li><b>Teknologi:</b> Microsoft Word, Excel</li><li><b>Hasil:</b> Panduan langkah demi langkah sepanjang 10 halaman.</li></ul></div>
+      <div class="tautan"><a href="https://drive.google.com/drive/folders/1bxIOo-PM_nWN2ZTG-IGeFo7YNIFqVCZH?usp=drive_link" target="_blank" rel="noopener" aria-label="Buka folder tugas di Drive">Drive</a></div>
+    </div>
+    <div class="tugas">
+      <div><h4>Tugas 4: Flowchart Sistem Deteksi Arah Antena</h4><p>Diagram alir sistem deteksi arah antena: membaca sinyal dari ADC, membandingkannya dengan register, lalu menggerakkan antena satu langkah sampai posisi terbaik ditemukan.</p><ul class="meta"><li><b>Teknologi:</b> Flowchart, diagram alir dengan percabangan dan perulangan</li><li><b>Hasil:</b> Flowchart sistem deteksi arah dalam format JPG.</li></ul></div>
+      <div class="tautan"><a href="https://drive.google.com/drive/folders/1bxIOo-PM_nWN2ZTG-IGeFo7YNIFqVCZH?usp=drive_link" target="_blank" rel="noopener" aria-label="Buka folder tugas di Drive">Drive</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="keterampilan">
+  <h2>Keterampilan</h2>
+  <p class="intro">Bahasa, perangkat, dan kebiasaan kerja yang saya pakai di tugas-tugas di atas.</p>
+  <div class="dua">
+    <div>
+      <h3>Teknis</h3>
+      <ul class="polos">
+        <li>Microsoft Word, termasuk Mail Merge</li>
+        <li>Microsoft Excel untuk data tabel</li>
+        <li>Pembuatan flowchart dan diagram alir</li>
+        <li>Pemrograman C++ dan Python (Spyder)</li>
+        <li>Penyusunan laporan dan dokumentasi teknis</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Pribadi</h3>
+      <ul class="polos">
+        <li>Komunikasi yang efektif</li>
+        <li>Manajemen waktu dan organisasi</li>
+        <li>Kerja sama tim</li>
+        <li>Pemecahan masalah dan berpikir kritis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="pendidikan">
+  <h2>Pendidikan dan sertifikat</h2>
+  <p class="intro">&nbsp;</p>
+  <div class="dua">
+    <div>
+      <h3>Pendidikan</h3>
+      <ul class="polos">
+        <li>Politeknik Negeri Samarinda, Teknik Komputer</li>
+        <li>SMAN 1 Kota Bangun</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sertifikat</h3>
+      <ul class="polos">
+        <li>Latihan Dasar Kepemimpinan (LDK)</li>
+        <li>Team Building Program (Bina Akrab)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="kontak" style="border-bottom:0">
+  <h2>Kontak</h2>
+  <p class="intro">Hubungi saya untuk pertanyaan tentang tugas atau proyek di atas.</p>
+  <dl class="kontak">
+    <dt>Email</dt><dd><a href="mailto:akmalhafiz0108@gmail.com">akmalhafiz0108@gmail.com</a></dd>
+    <dt>Telepon</dt><dd>+62 831-5282-2778</dd>
+    <dt>Lokasi</dt><dd>Samarinda Seberang</dd>
+  </dl>
+</section>
+
+<footer>Mohammad Akmal Hafiz · Teknik Komputer, Politeknik Negeri Samarinda</footer>
+</div>
+</body>
+</html>
